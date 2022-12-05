@@ -1,23 +1,24 @@
-.body {
+html,
+body {
   min-width: 290px;
   color: #4d4e53;
-  background-color: #ffffff;
+  background-color: #fff;
   font-family: 'Open Sans', Arial, sans-serif;
   line-height: 1.5;
 }
 
-.navbar {
+#navbar {
   position: fixed;
   min-width: 290px;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 300px;
   height: 100%;
   border-right: solid;
   border-color: rgba(0, 22, 22, 0.4);
 }
 
-.header {
+header {
   color: black;
   margin: 10px;
   text-align: center;
@@ -25,19 +26,23 @@
   font-weight: thin;
 }
 
-.main-doc header {
+#main-doc header {
   text-align: left;
-  margin: 0px;
+  margin: 0;
 }
 
-.navbar ul {
+#navbar ul {
   height: 88%;
   padding: 0;
   overflow-y: auto;
   overflow-x: hidden;
 }
 
-.navbar li {
+section li {
+  margin: 15px 0 0 20px;
+}
+
+#navbar li {
   color: #4d4e53;
   border-top: 1px solid;
   list-style: none;
@@ -45,7 +50,7 @@
   width: 100%;
 }
 
-.navbar a {
+#navbar a {
   display: block;
   padding: 10px 30px;
   color: #4d4e53;
@@ -53,24 +58,20 @@
   cursor: pointer;
 }
 
-.main-doc {
+#main-doc {
   position: absolute;
   margin-left: 310px;
   padding: 20px;
   margin-bottom: 110px;
 }
 
-.section article {
+section article {
   color: #4d4e53;
   margin: 15px;
   font-size: 0.96em;
 }
 
-.section li {
-  margin: 15px 0px 0px 20px;
-}
-
-.code {
+code {
   display: block;
   text-align: left;
   white-space: pre-line;
@@ -106,17 +107,17 @@
 
   #main-doc {
     position: relative;
-    margin-left: 0px;
+    margin-left: 0;
     margin-top: 270px;
   }
 }
 
 @media only screen and (max-width: 400px) {
-  .main-doc {
+  #main-doc {
     margin-left: -10px;
   }
 
-  .code {
+  code {
     margin-left: -20px;
     width: 100%;
     padding: 15px;
